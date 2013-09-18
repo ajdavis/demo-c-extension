@@ -37,14 +37,10 @@ static PyObject* is_myclass(PyObject* self, PyObject* args)
 
 static PyMethodDef Methods[] =
 {
-     {
-         "in_sub_interpreter", in_sub_interpreter, METH_NOARGS,
-         "True if running in a Python sub interpreter."
-     },
-     {
-         "is_myclass", is_myclass, METH_VARARGS,
-         "Returns isinstance(obj, MyClass)."
-     },
+     {"in_sub_interpreter", in_sub_interpreter, METH_NOARGS,
+      "True if running in a Python sub interpreter."},
+     {"is_myclass", is_myclass, METH_VARARGS,
+      "Returns isinstance(obj, MyClass)."},
      {NULL, NULL, 0, NULL}
 };
 
